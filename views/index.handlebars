@@ -1,0 +1,10 @@
+<h2 class="page-header">{{user.name}}<span style="color: blue">(@{{user.username}})</span> </h2>
+ 
+<div style="text-align: center;">
+	<h3 style="background-color: green; padding: 10px; border-radius: 5px; border: 1px solid green">My Friends</h3>
+	{{#each user.friendsList}}
+	<p>
+		{{this.friendName}}
+	</p>
+	{{/each}}
+</div>
